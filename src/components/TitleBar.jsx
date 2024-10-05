@@ -59,27 +59,27 @@ function TitleBar() {
 
   return (
     <>
-      <header className="fixed top-0 left-0 w-full p-10 text-white z-50">
+      <header className="fixed top-0 left-0 w-full pt-10 pb-5 text-white z-50 bg-background-color">
         <div className="container mx-auto flex flex-col items-center">
           <nav>
             <ul className="flex space-x-20 text-xl">
               <li>
-                <a href="/" className="hover:text-primary-accent">
+                <a href="#home" className="hover:text-primary-accent">
                   home
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:text-primary-accent">
+                <a href="#about" className="hover:text-primary-accent">
                   about
                 </a>
               </li>
               <li>
-                <a href="/experience" className="hover:text-primary-accent">
+                <a href="#experience" className="hover:text-primary-accent">
                   experience
                 </a>
               </li>
               <li>
-                <a href="/projects" className="hover:text-primary-accent">
+                <a href="#projects" className="hover:text-primary-accent">
                   projects
                 </a>
               </li>
