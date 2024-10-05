@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 function TitleBar() {
   const [activeSection, setActiveSection] = useState("home");
-  const sections = ["home", "about", "experience", "projects"];
+  const sections = useMemo(
+    () => ["home", "about", "experience", "projects"],
+    []
+  );
 
   useEffect(() => {
     const observer = new IntersectionObserver(
