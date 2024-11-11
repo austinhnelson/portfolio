@@ -1,4 +1,4 @@
-import TitleBar from "./components/titleBar";
+import TitleBar from "./components/TitleBar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Experience from "./components/Experience";
