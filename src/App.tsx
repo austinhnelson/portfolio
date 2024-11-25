@@ -1,11 +1,20 @@
 import "./App.css";
-import { Button } from "./components/ui/button";
+import { LeftSidePanel } from "./components/LeftSidePanel";
+import { RightSidePanel } from "./components/RightSidePanel";
+import {
+  ResizableHandle,
+  ResizablePanelGroup,
+} from "./components/ui/resizable";
 
 function App() {
   return (
-    <>
-      <Button>Click me please!</Button>
-    </>
+    <div className="w-full h-screen">
+      <ResizablePanelGroup direction="horizontal">
+        <LeftSidePanel />
+        <ResizableHandle withHandle />
+        <RightSidePanel />
+      </ResizablePanelGroup>
+    </div>
   );
 }
 
