@@ -49,3 +49,13 @@
   background-color: #222222;
   border-color: #ee2222;
 }
+
+.projects {
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.projects:hover {
+  background-color: #222222;
+  border-color: #ee2222;
+}
