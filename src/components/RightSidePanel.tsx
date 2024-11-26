@@ -17,7 +17,7 @@ export const RightSidePanel = () => {
           <div className="p-1">Projects</div>
           <Carousel className="p-4 w-full max-w-xs">
             <CarouselContent>
-              {Array.from({ length: 5 }).map((_, index) => (
+              {Array.from({ length: 5 }).map(() => (
                 <CarouselItem>
                   <Card>
                     <CardContent className="flex items-center justify-center">
