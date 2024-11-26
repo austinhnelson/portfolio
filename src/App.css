@@ -29,3 +29,23 @@
   background-color: #111211;
   color: white;
 }
+
+.about-me {
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.about-me:hover {
+  background-color: #222222;
+  border-color: #ee2222;
+}
+
+.experience {
+  border: 2px solid white;
+  border-radius: 15px;
+}
+
+.experience:hover {
+  background-color: #222222;
+  border-color: #ee2222;
+}
