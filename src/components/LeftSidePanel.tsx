@@ -7,7 +7,7 @@ import { IoIosMail } from "react-icons/io";
 export const LeftSidePanel = () => {
   return (
     <ResizablePanel
-      defaultSize={25}
+      defaultSize={20}
       className="left-side-panel flex flex-col text-left p-20"
     >
       <div className="text-7xl">
