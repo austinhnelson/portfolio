@@ -1,10 +1,19 @@
+import { Section } from "@/App";
 import { ResizablePanel } from "./ui/resizable";
 import { Separator } from "./ui/separator";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 
-export const LeftSidePanel = () => {
+export interface LeftSidePanelProps {
+  activeSelection: Section;
+  setActiveSelection: (section: Section) => void;
+}
+
+export const LeftSidePanel: React.FC<LeftSidePanelProps> = ({
+  activeSelection,
+  setActiveSelection,
+}) => {
   return (
     <ResizablePanel
       defaultSize={20}
@@ -20,9 +29,26 @@ export const LeftSidePanel = () => {
         Take a look around and get to know me.
       </div>
       <Separator className="my-4" />
-      <div className="text-section text-muted-foreground">About Me</div>
-      <div className="text-section text-muted-foreground">Experience</div>
-      <div className="text-section text-muted-foreground">Projects</div>
+      <div
+        className={`text-section text-muted-foreground ${
+          activeSelection === "about-me" ? "active" : ""
+        }`}
+        onClick={() => setActiveSelection("about-me")}
+      >
+        About Me
+      </div>
+      <div
+        className="text-section text-muted-foreground"
+        onClick={() => setActiveSelection("experience")}
+      >
+        Experience
+      </div>
+      <div
+        className="text-section text-muted-foreground"
+        onClick={() => setActiveSelection("projects")}
+      >
+        Projects
+      </div>
       <div className="flex pt-4 flex-row space-x-6 text-4xl mt-auto">
         <a
           href="https://www.linkedin.com/in/austinhnelson"

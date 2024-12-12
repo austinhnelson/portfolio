@@ -10,7 +10,7 @@ import { AiOutlineKubernetes } from "react-icons/ai";
 
 export const AboutMe = () => {
   return (
-    <div className="about-me h-1/2 p-2 flex flex-col overflow-y-scroll">
+    <div>
       <div className="text-xl font-bold">About Me</div>
       <div className="flex flex-row items-center space-x-4">
         <img
@@ -31,7 +31,7 @@ export const AboutMe = () => {
       </div>
       <div className="px-3 py-1">
         <div className="font-semibold text-left">Favorite Technologies:</div>
-        <div className="grid grid-cols-6 mt-2">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 mt-2">
           <TooltipProvider>
             <div className="flex justify-center items-center">
               <Tooltip>

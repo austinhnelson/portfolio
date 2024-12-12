@@ -1,3 +1,4 @@
+import { Section } from "@/App";
 import { AboutMe } from "./AboutMe";
 import { Card, CardContent } from "./ui/card";
 import {
@@ -9,11 +10,23 @@ import {
 } from "./ui/carousel";
 import { ResizablePanel } from "./ui/resizable";
 
-export const RightSidePanel = () => {
+interface RightSidePanelProps {
+  activeSelection: Section;
+}
+
+export const RightSidePanel: React.FC<RightSidePanelProps> = ({
+  activeSelection,
+}) => {
   return (
     <ResizablePanel className="right-side-panel flex">
       <div className="flex flex-col w-2/4 p-4 space-y-4">
-        <AboutMe />
+        <div
+          className={`about-me h-1/2 p-2 flex flex-col overflow-y-scroll justify-between ${
+            activeSelection === "about-me" ? "active" : ""
+          }`}
+        >
+          <AboutMe />
+        </div>
         <div className="projects h-1/2 p-2 flex flex-col items-center justify-start">
           <div className="p-1">Projects</div>
           <Carousel className="p-4 w-full max-w-xs">
