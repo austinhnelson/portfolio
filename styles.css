@@ -1,0 +1,119 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Satoshi', sans-serif;
+    background-color: #191818;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.left-side {
+    background-color: #191818;
+    color: white;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    height: 100vh;
+}
+.right-side {
+    margin-left: 40%;
+    color: white;
+    width: 60%;
+    overflow-y: scroll;
+    padding: 50px;
+    background-color: #1b1a1a;
+    border: 2px solid #2a2929;
+}
+section {
+    margin-bottom: 60px;
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+section:hover {
+    border-color: #1e293b;
+    background-color: #121212;
+}
+
+.intro:hover {
+    border: 1px solid #1e293b;
+    padding: 50px;
+    border-radius: 8px;
+    transition: border-color 0.0s, background-color 0.3s;
+    background-color: #121212;
+}
+
+h1, h2 {
+    margin: 0 0 20px;
+}
+
+.intro p {
+    font-size: 1.2rem;
+}
+
+.developer-image {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.social-links {
+    margin-top: 50px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    font-size: 32px;
+    color: #e7e9e8;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #0077b5;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+}
+
+.experience-details {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.experience-details h4 {
+    margin-right: 10px;
+}
+
+.experience-dates {
+    text-align: right;
+    color: #666;
+}
+
+#projects {
+  margin-top: 40px;
+}
+
+.project-item {
+  margin-bottom: 20px;
+}
+
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
