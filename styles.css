@@ -9,6 +9,7 @@ body, html {
     display: flex;
     height: 100vh;
 }
+
 .left-side {
     background-color: #191818;
     color: white;
@@ -20,38 +21,13 @@ body, html {
     position: fixed;
     height: 100vh;
 }
-.right-side {
-    margin-left: 40%;
-    color: white;
-    width: 60%;
-    overflow-y: scroll;
-    padding: 50px;
-    background-color: #1b1a1a;
-    border: 2px solid #2a2929;
-}
-section {
-    margin-bottom: 60px;
-    border: 2px solid #ccc;
-    padding: 20px;
-    border-radius: 8px;
-    transition: border-color 0.3s, background-color 0.3s;
-}
-
-section:hover {
-    border-color: #1e293b;
-    background-color: #121212;
-}
 
 .intro:hover {
     border: 1px solid #1e293b;
-    padding: 50px;
+    padding: 30px;
     border-radius: 8px;
     transition: border-color 0.0s, background-color 0.3s;
     background-color: #121212;
-}
-
-h1, h2 {
-    margin: 0 0 20px;
 }
 
 .intro p {
@@ -80,40 +56,71 @@ h1, h2 {
     color: #0077b5;
 }
 
-.experience-item {
-    margin-bottom: 20px;
+.right-side {
+    margin-left: 40%;
+    color: white;
+    width: 60%;
+    overflow-y: scroll;
+    padding: 50px;
+    background-color: #1b1a1a;
+    border: 2px solid #2a2929;
 }
 
-.experience-details {
+section {
+    border: 2px solid #ccc;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+section:hover {
+    border-color: #1e293b;
+    background-color: #121212;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.job h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.job-details {
     display: flex;
-    align-items: baseline;
-    margin-bottom: 10px;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+  
+.company {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+}
+  
+.dates {
+    font-size: 0.9rem;
+    color: grey;
+    margin: 0;
+    white-space: nowrap; 
 }
 
-.experience-details h4 {
-    margin-right: 10px;
+.job-description {
+    margin-top: 0.5rem;
+}
+  
+.job-description li {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
 }
 
-.experience-dates {
-    text-align: right;
-    color: #666;
-}
-
-#projects {
-  margin-top: 40px;
-}
-
-.project-item {
-  margin-bottom: 20px;
-}
-
-.project-item h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.project-item p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+@media (max-width: 600px) {
+    .job-details {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
 }
