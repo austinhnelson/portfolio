@@ -12,6 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <link rel="icon" href="a_logo.png" type="image/x-icon" />
   </head>
   <body>
     <div class="container">
@@ -28,6 +29,11 @@
             Take a look around<br />
             and get to know me.
           </p>
+          <div class="left-side-nav">
+            <a href="#about">About Me</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+          </div>
           <div class="social-links">
             <a
               href="https://www.linkedin.com/in/austinhnelson/"
@@ -45,7 +51,7 @@
         </div>
       </div>
       <div class="right-side">
-        <section class="about">
+        <section class="about" id="about">
           <h2>About Me</h2>
           <p>
             I'm a software engineer who enjoys solving complex problems and
@@ -58,7 +64,7 @@
             chess, as well as experimenting with unfamiliar technologies.
           </p>
         </section>
-        <section class="experience">
+        <section class="experience" id="experience">
           <h2>Experience</h2>
           <div class="job">
             <h3>Associate Software Engineer</h3>
@@ -146,6 +152,81 @@
               <li>
                 Teaching students C programming and fundamental software
                 development practices.
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="projects" id="projects">
+          <h2>Projects</h2>
+          <div class="project">
+            <h3>Git Branch Tab Tracker</h3>
+            <ul class="job-description">
+              <li>
+                Developed a VS Code extension to link open tabs with specific
+                Git branches, enhancing workflow efficiency.
+              </li>
+              <li>
+                Tracks unassociated branches and added user settings to sync
+                open tabs with new branches.
+              </li>
+              <li>
+                Leveraged TypeScript and VS Code's extension API to implement
+                the functionality.
+              </li>
+              <li class="no-bullet">
+                <a
+                  href="https://github.com/austinhnelson/git-tab-tracker"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <h3>Multiplayer Hide & Seek</h3>
+            <ul class="job-description">
+              <li>
+                Developed a multiplayer hide-and-seek game using Python’s Pygame
+                package.
+              </li>
+              <li>
+                Implemented a 2D ray casting algorithm to simulate the seeker’s
+                point of view and improve game mechanics.
+              </li>
+              <li>
+                Utilized simple sockets for multiplayer functionality, enabling
+                remote connections and real-time interactions.
+              </li>
+              <li class="no-bullet">
+                <a
+                  href="https://github.com/austinhnelson/hide-and-seek"
+                  target="_blank"
+                  >View on GitHub</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="project">
+            <h3>Tetris</h3>
+            <ul class="job-description">
+              <li>
+                Designed and developed a replica Tetris project in C++ utilizing
+                the SFML Graphics library.
+              </li>
+              <li>
+                Handled cube rotations using geometry principles as a
+                distinctive game play feature.
+              </li>
+              <li>
+                Featured a high score saving system using the local file system
+                to keep running high score between runs.
+              </li>
+              <li class="no-bullet">
+                <a
+                  href="https://github.com/austinhnelson/Tetris"
+                  target="_blank"
+                  >View on GitHub</a
+                >
               </li>
             </ul>
           </div>
